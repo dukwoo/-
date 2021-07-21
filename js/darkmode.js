@@ -4,7 +4,7 @@ const head = document.getElementsByTagName('head')[0]; //head가 여러 개
 const dark_css = document.createElement('link'); //만든 후에 부모객체에 추가해야만 나타남.
 dark_css.rel = 'stylesheet';
 dark_css.type = 'text/css';
-dark_css.href = 'css/darkmode.css'; //스타일 파일 이름. '/' 경로를 의미.
+dark_css.href = 'css+img/darkmode.css'; //스타일 파일 이름. '/' 경로를 의미.
 
 // 함수 생성.
 const goDark = () => {
