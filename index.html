@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, vie wport-fit=cover">
+  <meta name="author" content="BBangdang">
+  <meta name="keywords" content="동물 테스트, 동물 성격 유형, 회사 생활로 알아보는 동물 테스트">
+  <meta name="description" content="동물 성격 유형 테스트: 회사 생활로 알아보는 내게 어울리는 동물">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="회사 생활로 알아보는 8가지 질문">
+  <meta property="og:description" content="사람들이 보는 나는 어떤 동물일까?">
+  <!--수정-->
+  <meta property="og:image" content="이미지">
+  <meta property="og:url" content="https://dukwoo.github.io/personality-test/">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--수정-->
+  <link rel="shortcut icon" type="text/css" href="img/favicon.png">
+  <link rel="appel-touch-icon-precomposed" href="img/favicon.png">
+  
+  <title>
+    회사 생활로 알아보는 동물 유형 테스트 
+  </title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="header+footer.css">
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="qna.css">
+  <link rel="stylesheet" href="calc.css">
+  <link rel="stylesheet" href="result.css">
+
+</head>
+<body>
+
+  <div id="wrap">
+    <header id="header"> <!--낮과 밤으로 바뀌는 거-->
+      <button class="logo head" onclick=javascript:switchMode()></button> 
+    </header>
+    <section id="welcome" class="container">
+      <div id="title-box">
+        <h1 class="title">
+          8 Things<br>
+          To recognize with animal<br>
+          (feat.company)
+        </h1>
+        <h3 class="sec-tit">
+          회사 생활로 알아보는 8가지 질문
+        </h3>
+        <span class="time-logo"></span>
+        <div><b>소요 시간 : 5분 내외</b></div>
+      </div>
+      <hr class="w-line">
+      <p class="w-line">
+        <span id="p-tit">이 테스트로 당신은</span><br>
+        회사 생활에서 벌어지는 일로 보는 당신의 동물을 알 수 있습니다.<br>
+        <!--추가-->  
+      </p>
+      <hr class="w-line">
+      <div id="name-input">
+        <input type="text" placeholder="사원 이름" autofocus>
+      </div>
+      <p class="check-name warning"></p>
+      <div class="start-wrap">
+        <button class="start">출발</button>
+      </div>
+    </section>
+    <section id="qna" class="container">
+      <div class="status-bar">
+        <div class="status"></div>
+      </div>
+      <div class="q box"></div>
+      <div class="answer"></div>
+    </section>
+    <section id="calc">
+      <div class="calc-bar">
+        회사에서 퇴근하는 중
+        <div class="calc"></div>
+      </div>
+      <p class="wait">당신에게 맞는 동물을 찾는 중</p>
+    </section>
+    <section id="result" class="container">
+      <div id="score-box"> 
+        <div class="p title"></div>
+        <div class="point"></div>
+        <div class="pin"></div>
+        <div class="score-bar"></div>
+      </div>
+      <div id="desc-box">
+        <div class="art"></div>
+        <div class="result title"></div>
+        <div class="res desc"></div>
+        <span class="go-artist highlight" onclick=javascript:goArtist()>
+          당신의 동물이 마음에 든다면... 
+        </span>
+      </div>
+      <hr>
+      <p>친구들과 공유하기</p>
+      <div class="hash">#8things_animal_test #5분회사테스트 #동물유형테스트</div>
+      <div id="share-box">
+        <a onclick=javascript:tw() target="_blank" alt="Share on Twitter" title="트위터에 공유하기">
+          <span class="tw"></span>
+        </a>
+        <a onclick=javascript:fb() target="_blank" alt="Share on Facebook" title="페이스북에 공유하기">
+          <span class="fb"></span>
+        </a>
+        <a onclick=javascript:nv() target="_blank" alt="Share on Naver" title="네이버에 공유하기">
+          <span class="nv"></span>
+        </a>
+        <a onclick=javascript:band() target="_blank" alt="Share on Naver Band" title="네이버 밴드에 공유하기">
+          <span class="band"></span>
+        </a>
+      </div>
+      <button onclick=javascript:copy() class="btn">링크 복사하기</button>
+      <hr>
+      <div id="intro-box">
+        <div class="pro_pic"></div>
+        <div class="art-name">김지혜</div>
+        <div class="artist desc">
+          thanks for painting<br>
+          고급장비를 가지고 그림을 그립니다.<br><br>
+          email: <span class="highlight"></span><br>
+          <!--수정-->
+          instagram: <a href="" target="_blank" title="작가 인스타그램"><span
+              class="highlight"></span></a>
+        </div>
+        <button class="art-sns btn">
+          <!--수정-->
+          <a href="" target="_blank" title="작가 인스타그램">
+            작품 더 보기
+          </a>
+        </button>
+      </div>
+      <hr>
+      <div class="caution">
+        <p>
+          동물의 종류가 7개 밖에 없어 정확하지 않을 수도 있습니다. 얼추 비슷하다고만 생각하세요. 그러면 어느새 그 캐릭터에 푹 빠지게 될 겁니다.<br><br>
+          테스트가 재밌었다면
+          <span class="go-share highlight" onclick=javascript:goShare()>공유하기</span>로 개발자를 도와주세요!
+        </p>
+      </div>
+      <hr>
+      <div class="caution">
+        <p>
+          <span class="warning">결과 페이지에 나오는 그림의 상업적 이용을 금지합니다.</span><br>
+          해당 이미지의 저작권은 작가에게 있습니다.<br>
+          <!--수정-->
+          <a href="" target="_blank" title="작가 인스타그램">그림 작가</a>와 연락하시려면
+          <a href="" target="_blank" title="작가에게 이메일하기">이메일</a>을 부탁드립니다.<br>
+          테스트와 공유는 자유롭게 하시면 됩니다.<br>
+          <a href="" target="_blank" title="개발자 블로그">개발자</a>와 연락하시려면
+          <a href="" target="_blank" title="개발자에게 이메일하기">이메일</a>을
+          부탁드립니다.<br>
+          감사합니다!
+        </p>
+      </div>
+      <hr>
+    </section>
+    <footer id="footer"> <!--저작권 표시-->
+      <div>
+        <span class="highlight12">BBangdang</span>
+        <b>© 2021</b><br>
+      </div>
+      <span class="copy">출처: https://github.com/dev-dain/10-things-test, Dain Kim</span>
+    </footer>
+  </div>
+  
+  <script src="darkmode.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="share.js"></script>
+
+</body>
+
+</html>
