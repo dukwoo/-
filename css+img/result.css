@@ -27,7 +27,7 @@
 .pin {
   width: 30px; 
   height: 30px;
-  background-image: url('images/pin.png');
+  background-image: url('img/pin.png');
   background-size: cover;
   animation: fade-in 0.5s ease-out 2.6s forwards, 
           going-down 0.5s ease-out 2.6s forwards;
@@ -103,28 +103,28 @@
   cursor: pointer;
 }
 .tw {
-  background-image: url('images/twitter.svg');
+  background-image: url('img/twitter.svg');
   /* 
   자료 출처
   http://www.vectorico.com/twitter-logo-white-on-blue/
   */
 }
 .fb {
-  background-image: url('images/facebook.svg');
+  background-image: url('img/facebook.svg');
   /* 
   자료 출처
   https://commons.wikimedia.org/wiki/File:Facebook_f_logo_(2019).svg
   */
 }
 .nv {
-  background-image: url('images/naver.png');
+  background-image: url('img/naver.png');
   /*
   자료 출처
   https://www.facebook.com/184030231730640/photos/1175959155871071/ 
   */
 }
 .band {
-  background-image: url('images/naverband.png');
+  background-image: url('img/naverband.png');
   /*
   자료 출처
   https://upload.wikimedia.org/wikipedia/commons/3/30/2._BAND_Icon.png
