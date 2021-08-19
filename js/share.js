@@ -1,4 +1,4 @@
-const url = new url('https://dukwoo.github.io/personality-test'); //(수정) 
+const url = new url('https://dukwoo.github.io/personality-test/'); //(수정) 
 const title = '회사 생활로 알아보는 나에게 어울리는 동물 테스트';
 const hash = '%23동물 테스트 %23동물 성격 유형 %23회사 생활로 알아보는 동물 테스트'; //(수정)
 
