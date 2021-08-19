@@ -114,7 +114,7 @@ const goResult = () => { //wrap은 body전체 부분
   const pin = document.querySelector('.pin');
   
   //이미지 사진에도 각각 이름을 아래와 설정하기 ! (이미지 이름 수정)
-  const img_url = 'img/image-' + grade + '.png'; //점수대로 나눈 사진 url
+  const img_url = 'css+img/img/image-' + grade + '.png'; //점수대로 나눈 사진 url
   const res_img = document.createElement('img'); //img객체 생성 
   
   const res_img_div = document.querySelector('.art');
