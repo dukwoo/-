@@ -165,7 +165,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-image: url('../img/gyeoly.jpg');
+  background-image: url('img/아리.jpg');
   background-size: cover;
   transition: all 0.2s ease-out;
 }
